@@ -358,6 +358,7 @@ var pageBackgroundColor = [255, 255, 255];
 var canvas = document.getElementById('myCanvas');
 var context = canvas.getContext('2d');
 $(document).ready(function(){
+    $("#upload").width($(document).width() - 361);
     $("#sider").height($(document).height() - 45);
     //阻止浏览器默认行
     $(document).on({
