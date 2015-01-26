@@ -1,0 +1,18 @@
+header{width:100%;min-width:1000px;height:45px;background-color:#262635;position:fixed;top:0;left:0;z-index:9999}
+
+#headbar{padding:0 10px;position:relative}
+#logo{margin-top:5px;float:left}
+#navbar{margin-left:5px;padding-top:5px;float:left}
+#navbar li,.toolbar li{width:100px;height:40px;line-height:40px;margin-right:5px;float:left}
+#navbar li.on{background-color:#02a2aa;position:relative}
+#desc{height:30px;line-height:30px;margin-top:6px;padding-left:35px;background:url(../images/html5.png) 0 0 no-repeat;color:#fff;font-size:16px;float:right}
+
+.view{width:60px;height:40px;line-height:40px;padding-left:40px;display:block;background:url(../images/back.png) 0 0 no-repeat;font-weight:bold;color:#fff}
+.view:link,.view:visited,.view:active{color:#fff}
+.view:hover{background-color:#02a2aa}
+
+#preview{background-position:0 -40px}
+#download{background-position:0 -80px}
+#guide{background-position:0 -120px}
+
+#main{margin-top:45px;position:relative}

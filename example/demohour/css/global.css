@@ -1,0 +1,34 @@
+* {margin: 0; padding: 0;}
+body, textarea, input, button, select, keygen, legend{font:14px "Microsoft YaHei", Verdana, "宋体", sans-serif; font-weight: normal; color: #666666; outline: 0;}
+header, footer, section, article, aside, nav, address, figure, figcaption, menu, details {display:block;}
+h1, h2, h3, h4, h5, h6 {font-weight: normal;}
+body {background-color: #E6E6E6;}
+table {border-collapse: collapse; border-spacing: 0;}
+caption, th {text-align:left;font-weight: normal;}
+html, body, fieldset, img, iframe, abbr{border: 0;}
+i, cite, em, var, address, dfn{font-style: normal;}
+summary{outline: 0;}
+ul, li{list-style: none;}
+img {vertical-align: middle;}
+a, a:hover{text-decoration: none; cursor: pointer;}
+a:link {color: #666666;}
+a:visited {color: #666666;}
+a:hover {color: #C91618;}
+a:active {color: #666666;}
+
+.outer-section {width:100%; float: left; clear: both;}
+.outer-wrapper {width:100%; max-width: 960px; margin: 0 auto;}
+.banner {width:100%; max-width: 960px; height: auto;}
+#outer-section-1 {background-color: #010103;}
+#outer-section-2 {background-color: #454748;}
+#outer-section-3 {background-color: #FFFFFF;}
+#outer-section-4 {background-color: #818181;}
+#inner-columns-8 {height:280px;padding:0px;}
+#inner-columns-8 ul {width: 100%; float: left;}
+#inner-columns-8 li {width: 232px; height: 280px; margin-left: 10px; float: left;}
+#inner-columns-8 li:first-child {margin-left: 0;}
+#inner-columns-10 {height:571px;padding:0px;}
+#inner-columns-10 ul {width: 100%; margin-top: 10px; float: left;}
+#inner-columns-10 ul:first-child {margin-top: 0;}
+#inner-columns-10 li {width: 232px; height: 280px; margin-left: 10px; float: left;}
+#inner-columns-10 li:first-child {margin-left: 0;}

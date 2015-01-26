@@ -1,0 +1,11 @@
+{
+    "main": "index.html",
+    "name": "qdtools",
+    "description": "demo app of node-webkit",
+    "version": "0.1.0",
+    "window": {
+        "toolbar": true,
+        "resizable": true,
+        "fullscreen": false
+    }
+}
