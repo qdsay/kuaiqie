@@ -90,7 +90,7 @@ select option{padding-left:3px}
 #welcome{width:100%}
 #upload{width:70%;float:left}
 #upload h1{margin-top:50px;font-size:45px;color:#aaa;text-align:center}
-#sider{width:360px;min-height:640px;position:absolute;right:0;border-left:1px solid #27ebf7}
+#sider{width:360px;min-height:720px;position:absolute;right:0;border-left:1px solid #27ebf7}
 .block{width:340px;padding:0 10px;color:#1b7590;float:left;clear:both}
 .block a,.block a:link{color:#1b7590}
 .block h5{padding:10px;border-bottom:1px solid #27ebf7;font-size:15px;}
