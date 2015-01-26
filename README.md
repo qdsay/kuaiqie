@@ -1,3 +1,6 @@
+<b>3步制作响应式页面</b>
+<img src="resources/images/step.png">
+
 <b>5分钟改变切图方式</b>
 
 快切助手是一个快速、简洁的在线切图工具。QD团队设计快切，不仅是为了提高前端切图的速度，更是为了让切图变为一件简单的事情。现在，开发和设计都可以使用快切做出专业的响应式页面了。
@@ -19,5 +22,7 @@
 如果您在网站上集成了快切助手，请保留我们的Logo和网址。
 
 在线切图：http://kuaiqie.qdsay.com
+
 使用说明：http://kuaiqie.qdsay.com/help.html
+
 切图效果预览：http://kuaiqie.qdsay.com/view.php
