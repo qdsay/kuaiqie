@@ -90,7 +90,7 @@ select option{padding-left:3px}
 #welcome{width:100%}
 #upload{width:70%;float:left}
 #upload h1{margin-top:50px;font-size:45px;color:#aaa;text-align:center}
-#sider{width:360px;min-height:720px;position:absolute;right:0;border-left:1px solid #27ebf7}
+#sider{width:360px;min-height:780px;position:absolute;right:0;border-left:1px solid #27ebf7}
 .block{width:340px;padding:0 10px;color:#1b7590;float:left;clear:both}
 .block a,.block a:link{color:#1b7590}
 .block h5{padding:10px;border-bottom:1px solid #27ebf7;font-size:15px;}
@@ -99,8 +99,9 @@ select option{padding-left:3px}
 .block p{padding:5px 10px;line-height:25px}
 .block li{width:60px;margin:10px 12px;text-align:center;float:left}
 .block li img{width:60px}
-#aboutus{text-indent:32px}
+.aboutus{text-indent:32px}
 #focus{width:320px;padding:10px;float:left;clear:both}
+#focus h6 {padding-bottom:10px;border-top:1px solid #27ebf7;font-size:14px;}
 #dropbox{margin:50px auto 0;width:360px;height:300px;position:relative;border:5px dashed #999;border-radius:5px;background:url(../images/uploads.png) 50% 25% no-repeat;text-align:center}
 #dropbox h3{font-size:24px;padding-top:210px}
 #dropbox p{font-size:16px;padding:25px 0}

@@ -4,9 +4,11 @@
 .content h1 {padding: 10px 0; font-size: 24px;}
 .content h1 em {width: 32px; height: 32px; line-height: 32px; margin-right: 10px; display: inline-block; background-color: #1196DB; text-align: center; color: #FFF;}
 .content h3 {padding: 5px 0; font-size: 18px;}
-.content p {line-height: 30px; text-indent: 28px; font-size: 14px;}
-.content p.center {text-align: center;}
+.content p {padding: 5px 0; line-height: 30px; text-indent: 28px; font-size: 14px;}
+.content p.center {text-indent: 0; text-align: center;}
 
 .example {width: 100%; float: left; clear: both;}
 .example li {width: 85px; margin: 20px; float: left;}
 .example img {width: 85px; height: 85px;}
+
+.step {width: 100%; max-width: 800px;}
