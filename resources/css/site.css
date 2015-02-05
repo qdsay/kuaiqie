@@ -103,7 +103,7 @@ select option{padding-left:3px}
 #focus{width:320px;padding:10px;float:left;clear:both}
 #focus h6 {padding-bottom:10px;border-top:1px solid #27ebf7;font-size:14px;}
 #dropbox{margin:50px auto 0;width:360px;height:300px;position:relative;border:5px dashed #999;border-radius:5px;background:url(../images/uploads.png) 50% 25% no-repeat;text-align:center}
-#dropbox h3{font-size:24px;padding-top:210px}
+#dropbox h3{font-size:24px;padding-top:200px}
 #dropbox p{font-size:16px;padding:25px 0}
 #dropbox p.know{font-size:14px}
 #code-handler{width:100%;position:absolute;top:45px;left:0;background-color:#fff;padding:10px 0;box-shadow:0 1px 5px #666;z-index:10000;display:none}
