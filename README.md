@@ -1,5 +1,5 @@
 <b>3步制作响应式页面</b>
-<img src="resources/images/step.png">
+<img src="http://kuaiqie.qdsay.com/resources/images/step.png">
 
 <b>5分钟改变切图方式！</b>
 
