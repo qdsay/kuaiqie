@@ -48,7 +48,12 @@
         <label>间距：</label><input type="text" class="mini px" id="section-margin-bottom" name="section-margin-bottom" value="0"> 分段间距（px）
       </p>
       <p>
-        <label>背景：</label><input type="text" class="mini" id="body-bg-color" name="body-bg-color" value="#FFFFFF"> <em for="body-bg-color" class="picker-btn">取色</em>
+        <label>背景：</label><input type="text" class="tiny" id="body-bg-color" name="body-bg-color" value="#FFFFFF"> <em for="body-bg-color" class="picker-btn">取色</em>
+      </p>
+      <p>
+        <label>模板：</label>
+        <span><input type="radio" checked="checked" id="template" name="template" value="standard"> 标准</span>
+        <span><input type="radio" id="template" name="template" value="simplify"> 极简</span>
       </p>
       <p>
         <label>组件：</label>
@@ -57,11 +62,11 @@
       </p>
       <p class="heighter">
         <label>脚本：</label>
-<textarea id="add-script" name="add-script" rows="3" cols="42">
+<span class="more"><textarea id="add-script" name="add-script" rows="3" cols="42">
 <script>
 //(统计/IM/分享)代码
 
-</script></textarea>
+</script></textarea></span>
       </p>
       <p class="uneven">
         <button class="set-btn" id="set-data" name="set-data">保存设置</button>
@@ -83,7 +88,8 @@
         <label>关键词：</label><input type="text" class="long" id="page-keywords" name="page-keywords" value="">
       </p>
       <p class="heighter">
-        <label>描述：</label><textarea id="page-description" name="page-description" rows="3" cols="42"></textarea>
+        <label>描述：</label>
+        <span class="more"><textarea id="page-description" name="page-description" rows="3" cols="42"></textarea></span>
       </p>
       <p>
         <label>文件名：</label><input type="text" class="mini" id="my-project" name="my-project" value="myproject"> .zip
@@ -273,7 +279,7 @@
 </div>
 <div id="code-handler">
   <div>
-    <h3>页面框架HTML:</h3>
+    <h3>页面框架HTML: index.html</h3>
     <textarea id="html-code" name="html-code"></textarea>
   </div>
   <div>
@@ -349,10 +355,12 @@
   </div>
   <em id="codeView" class="closeIt"></em>
 </div>
-<script type="text/javascript" src="resources/js/qdtools.min.js"></script>
+<script type="text/javascript" src="resources/js/qdtemplates.min.js"></script>
 <script type="text/javascript" src="resources/js/qdruler.min.js"></script>
+<script type="text/javascript" src="resources/js/qdtools.min.js"></script>
 <script>
-var wrapperWidth = 960;
+var sectionWidth = 0;
+var wrapperWidth = 0;
 var wrapperMargin = 0;
 var sectionMarginBottom = 15;
 var pageBackgroundColor = [255, 255, 255];
