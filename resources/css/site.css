@@ -58,7 +58,7 @@ select option{padding-left:3px}
 .picker-btn{background-position:0 -30px}
 #sharelist{padding:0 5px}
 #sharelist a{width:32px!important;height:32px!important;line-height:32px!important;padding-left:0!important}
-#main{margin-top:45px;position:relative}
+#main{margin-top:45px;position:relative;overflow:hidden}
 #myCanvas,#myPannel,#myPicker,#tempCanvas,#outCanvas,#outImage{position:absolute;top:0;left:0}
 #myCanvas{margin:0 auto;display:none}
 #myPannel{z-index:9}
@@ -92,7 +92,7 @@ select option{padding-left:3px}
 #welcome{width:100%}
 #upload{width:70%;float:left}
 #upload h1{margin-top:50px;font-size:45px;color:#aaa;text-align:center}
-#sider{width:360px;min-height:780px;position:absolute;right:0;border-left:1px solid #27ebf7}
+#sider{width:360px;min-height:780px;border-left:1px solid #27ebf7;float:left}
 .block{width:340px;padding:0 10px;color:#1b7590;float:left;clear:both}
 .block a,.block a:link{color:#1b7590}
 .block h5{padding:10px;border-bottom:1px solid #27ebf7;font-size:15px;}
@@ -131,9 +131,9 @@ select option{padding-left:3px}
 .outer-section .cur{position:relative;background-color:rgba(200,200,200,0.5)}
 .outer-wrapper{height:100px;width:960px;margin:0 auto;color:#333}
 .outer-wrapper div,.outer-wrapper a{min-height:20px;display:block;background-color:rgba(120,120,120,0.5);color:#333}
-.outer-handler{background-color:#aaa;width:136px;height:30px;line-height:30px;position:absolute;top:0;left:0;color:#fff}
+.outer-handler{height:30px;line-height:30px;position:absolute;top:0;left:0;background-color:#aaa;color:#fff}
 .outer-handler em{padding:5px 7px;background-color:#999}
-.outer-handler span{padding-left:5px}
+.outer-handler span{padding:0 5px}
 .outer-banner{width:100%!important;background-color:rgba(120,120,120,0.1);margin:0!important}
 .outer-banner div,.outer-banner a{margin:0 30px;position:relative}
 .ignore{background:url(../images/ignore.png) 0 0 repeat rgba(120,120,120,0.2)!important}
