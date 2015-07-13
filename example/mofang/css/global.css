@@ -1,0 +1,37 @@
+* {margin: 0; padding: 0;}
+body, textarea, input, button, select, keygen, legend{font:14px "Microsoft YaHei", Verdana, "宋体", sans-serif; font-weight: normal; color: #666666; outline: 0;}
+header, footer, section, article, aside, nav, address, figure, figcaption, menu, details {display:block;}
+h1, h2, h3, h4, h5, h6 {font-weight: normal;}
+table {border-collapse: collapse; border-spacing: 0;}
+caption, th {text-align:left;font-weight: normal;}
+html, body, fieldset, img, iframe, abbr{border: 0;}
+i, cite, em, var, address, dfn{font-style: normal;}
+summary{outline: 0;}
+ul, li{list-style: none;}
+img {vertical-align: middle;}
+a, a:hover{text-decoration: none; cursor: pointer;}
+a:link {color: #666666;}
+a:visited {color: #666666;}
+a:hover {color: #C91618;}
+a:active {color: #666666;}
+
+.outer-section {width:100%; float: left; clear: both;}
+.outer-wrapper {width:100%; max-width: 960px; margin: 0 auto;}
+.banner {width:100%; max-width: 960px; height: auto;}
+.outer-banner {width:100%; max-width: 1263px; margin: 0 auto; height: auto;}
+
+#outer-section-1 {background-color: #359EC3;}
+#outer-section-1 .outer-banner {background: url(../images/qd_s1_bg.png) no-repeat scroll center bottom / cover;}
+#outer-section-2 {background-color: #359EC3;}
+#outer-section-2 .outer-banner {background: url(../images/qd_s2_bg.png) no-repeat scroll center bottom / cover;}
+#outer-section-3 {background-color: #FDFEFE;}
+#outer-section-4 {background-color: #F9F9F9;}
+#outer-section-5 {background-color: #359EC3;}
+#outer-section-6 {background-color: #B356A1;}
+#outer-section-7 {background-color: #3CB796;}
+#outer-section-8 {background-color: #E48069;}
+#outer-section-9 {background-color: #369DD3;}
+#outer-section-10 {background-color: #D8B688;}
+#outer-section-11 {background-color: #556C96;}
+#outer-section-11 .outer-banner {background: url(../images/qd_s11_bg.png) no-repeat scroll center bottom / cover;}
+#outer-section-12 {background-color: #4D6187;}

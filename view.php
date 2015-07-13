@@ -23,7 +23,7 @@
 </head>
 <body>
 <?php
-    $exp = isset($_GET['exp']) ? trim($_GET['exp'])  : 'jd';
+    $exp = isset($_GET['exp']) ? htmlspecialchars(trim($_GET['exp']), ENT_QUOTES) : 'jd';
 ?>
 <header>
 <div id="headbar">
