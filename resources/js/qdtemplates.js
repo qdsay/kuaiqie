@@ -40,7 +40,7 @@ function getStandard() {
                 wrapper.find("ul").each(function(i) {
                     html += perch + '      <ul>' + '\r\n';
                     $(this).children("li").each(function(k) {
-                        html += perch + '        <li><a href="" title="" target="_blank"><img src="images/qd_s' + counter + '_r' + i + '_c' + k + '.png" alt="" /></a></li>' + '\r\n';
+                        html += perch + '        <li><div><a href="" title="" target="_blank"><img src="images/qd_s' + counter + '_r' + i + '_c' + k + '.png" alt="" /></a></div></li>' + '\r\n';
                     });
                     html += perch + '      </ul>' + '\r\n';
                 });
@@ -187,7 +187,7 @@ function getStandardCSS() {
     css += '.outer-section {width:100%;' + style + ' float: left; clear: both;}\r\n';
     css += '.outer-wrapper {width:100%; max-width: ' + wrapperWidth + 'px; margin: 0 auto;}\r\n';
     if ($(".split-columns").length > 0) {
-        css += '.columns {width: ' + wrapperWidth + 'px; margin: 0 auto;}\r\n';
+        css += '.columns {max-width: ' + wrapperWidth + 'px; margin: 0 auto;}\r\n';
     }
     css += '.banner {width:100%; max-width: ' + wrapperWidth + 'px; height: auto;}\r\n';
     if ($(".outer-banner").length > 0) {
@@ -209,34 +209,48 @@ function getStandardCSS() {
             if (wrapper.hasClass("outer-banner")) {
                 css += '#outer-section-' + counter + ' .outer-banner {background: url(../images/qd_s' + counter + '_bg.png) no-repeat scroll center bottom / cover;}\r\n';
             }
-            if (wrapper.find(".split-columns").length > 0) {
-                var split = wrapper.find(".split-columns");
+            var split = wrapper.find(".split-columns");
+            if (split.length > 0) {
                 var ul = split.find("ul:last");
                 var li = split.find("li:last");
-                var width = height = 0;
-                ul.children("li").each(function(i) {
-                    width += $(this).width();
-                });
-                split.children("ul").each(function(i) {
-                    height += $(this).height();
-                });
-                var width = Math.floor(width / ul.children("li").length) + 2;
-                var height = Math.floor(height / split.children("ul").length);
                 var marginTop = parseInt(ul.css("margin-top").slice(0, -2));
                 var marginLeft = parseInt(li.css("margin-left").slice(0, -2));
-                css += '#outer-section-' + counter + ' .columns {' + split.attr('style') + '}\r\n';
-                if (marginTop > 0) {
-                    css += '#outer-section-' + counter + ' .columns ul {width: 100%; margin-top: ' + marginTop + 'px; float: left;}\r\n';
-                    css += '#outer-section-' + counter + ' .columns ul:first-child {margin-top: 0;}\r\n';
+                var width = 100 / ul.children("li").length;
+
+                if (split.css("padding-top") == split.css("padding-bottom") && split.css("padding-left") == split.css("padding-right")) {
+                    if (split.css("padding-top") == split.css("padding-left")) {
+                        if (split.css("padding-top") > 0) {
+                            css += '#outer-section-' + counter + ' .columns {padding: ' + split.css("padding-top") + 'px;}\r\n';
+                        }
+                    } else {
+                        css += '#outer-section-' + counter + ' .columns {padding: ' + split.css("padding-top") + 'px ' + split.css("padding-left") + 'px;}\r\n';
+                    }
                 } else {
-                    css += '#outer-section-' + counter + ' .columns ul {width: 100%; float: left;}\r\n';
+                    css += '#outer-section-' + counter + ' .columns {padding: ' + split.css("padding-top") + 'px ' + split.css("padding-right") + 'px ' + split.css("padding-bottom") + 'px ' + split.css("padding-left") + 'px;}\r\n';
                 }
+
                 if (marginLeft > 0) {
-                    css += '#outer-section-' + counter + ' .columns li {width: ' + width + 'px; height: ' + height + 'px; margin-left: ' + marginLeft + 'px; float: left;}\r\n';
-                    css += '#outer-section-' + counter + ' .columns li:first-child {margin-left: 0;}\r\n';
+                    var edge = Math.floor(marginLeft / 2);
+                    var bottom = (marginTop > 0) ? 'margin-bottom: ' + marginTop + 'px;' : '';
+                    css += '#outer-section-' + counter + ' .columns ul {margin-left: -' + edge + 'px; margin-right: -' + edge + 'px;}\r\n';
+                    css += '#outer-section-' + counter + ' .columns li {width: ' + width + '%; float: left;}\r\n';
+                    css += '#outer-section-' + counter + ' .columns li div {' + bottom + 'padding: 0 ' + edge + 'px;}\r\n';
+                    css += '#outer-section-' + counter + ' .columns li div img {width: 100%; height: auto;}\r\n';
                 } else {
-                    css += '#outer-section-' + counter + ' .columns li {width: ' + width + 'px; height: ' + height + 'px; float: left;}\r\n';
+                    css += '#outer-section-' + counter + ' .columns li {width: ' + width + '%; float: left;}\r\n';
+                    if (marginTop > 0) {
+                        css += '#outer-section-' + counter + ' .columns li div {margin-bottom: ' + marginTop + 'px;}\r\n';
+                        css += '#outer-section-' + counter + ' .columns li div img {width: 100%; height: auto;}\r\n';
+                    } else {
+                        css += '#outer-section-' + counter + ' .columns li img {width: 100%; height: auto;}\r\n';
+                    }
                 }
+
+                css += '@media screen and (max-width : 1920px) {}\r\n';
+                css += '@media screen and (max-width : 1280px) {}\r\n';
+                css += '@media screen and (max-width : 1024px) {}\r\n';
+                css += '@media screen and (max-width : 640px) {}\r\n';
+                css += '@media screen and (max-width : 320px) {}\r\n';
             }
         });
     }
@@ -301,7 +315,7 @@ function getSimplifyCSS() {
                 var marginLeft = parseInt(li.css("margin-left").slice(0, -2));
                 css += '#wrapper-' + counter + ' {' + split.attr('style') + '}\r\n';
                 if (marginTop > 0) {
-                    css += '#wrapper-' + counter + ' .columns ul {width: 100%; margin-top: ' + marginTop + 'px; float: left;}\r\n';
+                    css += '#wrapper-' + counter + ' .columns ul {width: 100%; min-width: ' + wrapperWidth + 'px; margin-top: ' + marginTop + 'px; float: left;}\r\n';
                     css += '#wrapper-' + counter + ' .columns ul:first-child {margin-top: 0;}\r\n';
                 } else {
                     css += '#wrapper-' + counter + ' .columns ul {width: 100%; float: left;}\r\n';

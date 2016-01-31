@@ -710,13 +710,21 @@ function exportZip(projectName) {
         var wrapperOffset = wrapper.offset();
         var cvsOffset = $("#myCanvas").offset();
         if (wrapper.children(".split-columns").length > 0) {
+            var width = height = total = 0;
+            wrapper.children(".split-columns").children("ul").each(function(i) {
+                $(this).children("li").each(function(k) {
+                    width += $(this).outerWidth();
+                    height += $(this).outerHeight();
+                    total++;
+                });
+            });
+            width = Math.round(width/total);
+            height = Math.round(height/total);
             wrapper.children(".split-columns").children("ul").each(function(i) {
                 $(this).children("li").each(function(k) {
                     var offset = $(this).offset();
                     var x_axis = offset.left - cvsOffset.left;
                     var y_axis = offset.top - cvsOffset.top;
-                    var width = $(this).outerWidth();
-                    var height = $(this).outerHeight();
                     cutImage(x_axis, y_axis, width, height, 's' + counter + '_' + 'r' + i + '_' + 'c' + k);
                 });
             });
