@@ -17,40 +17,50 @@ a:active {color: #666666;}
 
 .outer-section {width:100%; float: left; clear: both;}
 .outer-wrapper {width:100%; max-width: 990px; margin: 0 auto;}
+.columns {max-width: 990px; margin: 0 auto;}
 .banner {width:100%; max-width: 990px; height: auto;}
-#outer-section-1 {height: 30px; background: url(../images/qd_s1.png) no-repeat scroll center bottom / cover;}
-#outer-section-2 {height: 70px; background: url(../images/qd_s2.png) no-repeat scroll center bottom / cover;}
-#outer-section-3 {height: 510px; background: url(../images/qd_s3.png) no-repeat scroll center bottom / cover #FACD94;}
+.outer-banner {width:100%; max-width: 1263px; margin: 0 auto; height: auto;}
+
+#outer-section-1 {background-color: #F9F9F9;}
+#outer-section-1 .outer-banner {background: url(../images/qd_s1_bg.png) no-repeat scroll center bottom / cover;}
+#outer-section-2 {background-color: #FFFFFF;}
+#outer-section-2 .outer-banner {background: url(../images/qd_s2_bg.png) no-repeat scroll center bottom / cover;}
+#outer-section-3 {background-color: #F9CC93;}
+#outer-section-3 .outer-banner {background: url(../images/qd_s3_bg.png) no-repeat scroll center bottom / cover;}
 #outer-section-4 {background-color: #FFDB2B;}
 #outer-section-5 {background-color: #01AFEE;}
 #outer-section-6 {background-color: #E72758;}
+#outer-section-6 .outer-banner {background: url(../images/qd_s6_bg.png) no-repeat scroll center bottom / cover;}
 #outer-section-7 {background-color: #FFDB2B;}
 #outer-section-8 {background-color: #FFDB2B;}
-#outer-section-9 {height: 619px; background: url(../images/qd_s9.png) no-repeat scroll center bottom / cover #7D47D9;}
+#outer-section-8 .columns {padding: 10px 0px; overflow:hidden;}
+#outer-section-8 .columns li {width: 100%; float: left;}
+#outer-section-8 .columns li img {width: 100%; height: auto;}
+#outer-section-9 {background-color: #7D47D9;}
 #outer-section-10 {background-color: #E7594D;}
-#outer-section-11 {height: 50px; background: url(../images/qd_s11.png) no-repeat scroll center bottom / cover #11B68C;}
-#outer-section-12 {background-color: #11B68C;}
-#outer-section-13 {background-color: #11B68C;}
-#outer-section-14 {background-color: #11B68C;}
-#outer-section-15 {background-color: #FF6877;}
-#outer-section-16 {background-color: #FF6877;}
-#outer-section-17 {background-color: #FF6877;}
-#outer-section-18 {background-color: #9FD946;}
-#outer-section-19 {background-color: #FFDB2B;}
-#inner-columns-19 {height:100px;padding:10px 0px 20px 0px;}
-#inner-columns-19 ul {width: 100%; float: left;}
-#inner-columns-19 li {width: 491px; height: 100px; margin-left: 8px; float: left;}
-#inner-columns-19 li:first-child {margin-left: 0;}
-#outer-section-20 {background-color: #FFDB2B;}
-#outer-section-21 {background-color: #FFDB2B;}
-#inner-columns-21 {height:351px;padding:10px 5px 5px 5px;}
-#inner-columns-21 ul {width: 100%; margin-top: 10px; float: left;}
-#inner-columns-21 ul:first-child {margin-top: 0;}
-#inner-columns-21 li {width: 237px; height: 170px; margin-left: 10px; float: left;}
-#inner-columns-21 li:first-child {margin-left: 0;}
-#outer-section-22 {background-color: #FFDB2B;}
-#outer-section-23 {background-color: #FFDB2B;}
-#inner-columns-23 {height:120px;padding:10px 0px;}
-#inner-columns-23 ul {width: 100%; float: left;}
-#inner-columns-23 li {width: 990px; height: 120px; float: left;}
-#outer-section-24 {height: 119px; background: url(../images/qd_s24.png) no-repeat scroll center bottom / cover #474E5D;}
+#outer-section-11 {background-color: #11B68C;}
+#outer-section-12 {background-color: #FF6877;}
+#outer-section-13 {background-color: #9FD946;}
+#outer-section-14 {background-color: #FFDB2B;}
+#outer-section-14 .columns {padding: 10px 0px 20px 0px; overflow:hidden;}
+#outer-section-14 .columns ul {margin-left: -4px; margin-right: -4px;}
+#outer-section-14 .columns li {width: 50%; float: left;}
+#outer-section-14 .columns li div {padding: 0 4px;}
+#outer-section-14 .columns li div img {width: 100%; height: auto;}
+#outer-section-15 {background-color: #FFDB2B;}
+#outer-section-16 {background-color: #FFDB2B;}
+#outer-section-16 .columns {padding: 10px 5px 5px 5px; background-color: #FFFFFF; overflow:hidden;}
+#outer-section-16 .columns ul {margin-left: -4px; margin-right: -4px;}
+#outer-section-16 .columns li {width: 25%; float: left;}
+#outer-section-16 .columns li div {margin-bottom: 10px;padding: 0 4px;}
+#outer-section-16 .columns li div img {width: 100%; height: auto;}
+#outer-section-17 {background-color: #FFDB2B;}
+#outer-section-17 .columns {padding: 45px 0px 10px 0px; overflow:hidden;}
+#outer-section-17 .columns li {width: 100%; float: left;}
+#outer-section-17 .columns li img {width: 100%; height: auto;}
+#outer-section-18 .outer-banner {background: url(../images/qd_s18_bg.png) no-repeat scroll center bottom / cover;}
+@media screen and (max-width : 1920px) {}
+@media screen and (max-width : 1280px) {}
+@media screen and (max-width : 1024px) {}
+@media screen and (max-width : 640px) {}
+@media screen and (max-width : 320px) {}

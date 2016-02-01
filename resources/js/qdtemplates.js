@@ -219,14 +219,14 @@ function getStandardCSS() {
 
                 if (split.css("padding-top") == split.css("padding-bottom") && split.css("padding-left") == split.css("padding-right")) {
                     if (split.css("padding-top") == split.css("padding-left")) {
-                        if (split.css("padding-top") > 0) {
-                            css += '#outer-section-' + counter + ' .columns {padding: ' + split.css("padding-top") + 'px;}\r\n';
+                        if (parseInt(split.css("padding-top").slice(0, -2)) > 0) {
+                            css += '#outer-section-' + counter + ' .columns {padding: ' + split.css("padding-top") + '; overflow:hidden;}\r\n';
                         }
                     } else {
-                        css += '#outer-section-' + counter + ' .columns {padding: ' + split.css("padding-top") + 'px ' + split.css("padding-left") + 'px;}\r\n';
+                        css += '#outer-section-' + counter + ' .columns {padding: ' + split.css("padding-top") + ' ' + split.css("padding-left") + '; overflow:hidden;}\r\n';
                     }
                 } else {
-                    css += '#outer-section-' + counter + ' .columns {padding: ' + split.css("padding-top") + 'px ' + split.css("padding-right") + 'px ' + split.css("padding-bottom") + 'px ' + split.css("padding-left") + 'px;}\r\n';
+                    css += '#outer-section-' + counter + ' .columns {padding: ' + split.css("padding-top") + ' ' + split.css("padding-right") + ' ' + split.css("padding-bottom") + ' ' + split.css("padding-left") + '; overflow:hidden;}\r\n';
                 }
 
                 if (marginLeft > 0) {
@@ -245,14 +245,15 @@ function getStandardCSS() {
                         css += '#outer-section-' + counter + ' .columns li img {width: 100%; height: auto;}\r\n';
                     }
                 }
-
-                css += '@media screen and (max-width : 1920px) {}\r\n';
-                css += '@media screen and (max-width : 1280px) {}\r\n';
-                css += '@media screen and (max-width : 1024px) {}\r\n';
-                css += '@media screen and (max-width : 640px) {}\r\n';
-                css += '@media screen and (max-width : 320px) {}\r\n';
             }
         });
+        if ($(".outer-section").find(".split-columns").length > 0) {
+            css += '@media screen and (max-width : 1920px) {}\r\n';
+            css += '@media screen and (max-width : 1280px) {}\r\n';
+            css += '@media screen and (max-width : 1024px) {}\r\n';
+            css += '@media screen and (max-width : 640px) {}\r\n';
+            css += '@media screen and (max-width : 320px) {}\r\n';
+        }
     }
     return css;
 }
