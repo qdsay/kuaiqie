@@ -104,7 +104,7 @@ select option{padding-left:3px}
 .aboutus{text-indent:32px}
 #focus{width:320px;padding:10px;float:left;clear:both}
 #focus h6 {padding-bottom:10px;border-top:1px solid #27ebf7;font-size:14px;}
-#dropbox{margin:50px auto 0;width:365px;height:300px;position:relative;border:5px dashed #999;border-radius:5px;background:url(../images/uploads.png) 50% 25% no-repeat;text-align:center}
+#dropbox{margin:50px auto 0;width:366px;height:300px;position:relative;border:5px dashed #999;border-radius:5px;background:url(../images/uploads.png) 50% 25% no-repeat;text-align:center}
 #dropbox h3{font-size:24px;padding-top:200px}
 #dropbox p{font-size:16px;padding:25px 0}
 #dropbox p.know{font-size:14px}
@@ -124,7 +124,7 @@ select option{padding-left:3px}
 #ruler-y{width:18px;height:1000px;background:url(../images/ruler-y.png) 0 0 repeat-y #fff;position:absolute;top:44px;left:0}
 #ruler-x span{width:47px;height:9px;padding-left:3px;display:inline-block;float:left}
 #ruler-y span{width:9px;height:50px;padding:0 3px;word-break:break-all;display:block;float:left}
-#loadimage{width:360px;height:295px;position:absolute;top:0;left:0;filter:alpha(opacity=0);-moz-opacity:0;opacity:0}
+#loadimage{width:361px;height:295px;position:absolute;top:0;left:0;filter:alpha(opacity=0);-moz-opacity:0;opacity:0}
 #overflow{width:100%;height:100%;position:fixed;top:0;left:0;z-index:10001;background:url(../images/export.gif) center center no-repeat #3d3d3d;filter:alpha(opacity=90);-moz-opacity:.9;-khtml-opacity:.9;opacity:.9;display:none}
 .outer-blank{height:10px;width:100%;float:left;clear:both}
 .outer-section{height:100px;width:100%;position:relative;float:left;background-color:rgba(120,120,120,0.2);clear:both}
