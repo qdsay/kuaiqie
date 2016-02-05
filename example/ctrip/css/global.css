@@ -16,40 +16,75 @@ a:hover {color: #C91618;}
 a:active {color: #666666;}
 
 .outer-section {width:100%; float: left; clear: both;}
-.outer-wrapper {width:100%; max-width: 982px; margin: 0 auto;}
-.banner {width:100%; max-width: 982px; height: auto;}
-#outer-section-1 {height: 59px; background: url(../images/qd_s1.png) no-repeat scroll center bottom / cover;}
-#outer-section-2 {height: 40px; background: url(../images/qd_s2.png) no-repeat scroll center bottom / cover;}
-#outer-section-3 {height: 324px; background: url(../images/qd_s3.png) no-repeat scroll center bottom / cover;}
-#outer-section-4 {background-color: #FEB70D;}
-#outer-section-5 {height: 150px; background: url(../images/qd_s5.png) no-repeat scroll center bottom / cover;}
-#outer-section-6 {background: url(../images/qd_s6_bg.png) 0 0 repeat;}
-#inner-columns-6 {height:584px;padding:0px;}
-#inner-columns-6 ul {width:100%;margin-top:10px;float:left;}
-#inner-columns-6 ul:first-child {margin-top:0;}
-#inner-columns-6 li {width:320px;height:287px;margin-left:10px;float:left;}
-#inner-columns-6 li:first-child {margin-left:0;}
-#outer-section-7 {height: 44px; background: url(../images/qd_s7.png) no-repeat scroll center bottom / cover;}
-#outer-section-8 {height: 197px; background: url(../images/qd_s8.png) no-repeat scroll center bottom / cover;}
+.outer-wrapper {width:100%; max-width: 984px; margin: 0 auto;}
+.columns {max-width: 984px; margin: 0 auto;}
+.banner {width:100%; max-width: 984px; height: auto;}
+.outer-banner {width:100%; max-width: 1263px; margin: 0 auto; height: auto;}
+
+#outer-section-1 .outer-banner {background: url(../images/qd_s1_bg.png) no-repeat scroll center bottom / cover;}
+#outer-section-2 {background-color: #2577E3;}
+#outer-section-2 .outer-banner {background: url(../images/qd_s2_bg.png) no-repeat scroll center bottom / cover;}
+#outer-section-3 {background-color: #DB3634;}
+#outer-section-3 .outer-banner {background: url(../images/qd_s3_bg.png) no-repeat scroll center bottom / cover;}
+#outer-section-4 {background-color: #FEBB0D;}
+#outer-section-5 {background-color: #A3051E;}
+#outer-section-5 .outer-banner {background: url(../images/qd_s5_bg.png) no-repeat scroll center bottom / cover;}
+#outer-section-6 {background-color: #A3051E;}
+#outer-section-6 .columns {padding: 0pxpx 0pxpx 43pxpx 0pxpx;}
+#outer-section-6 .columns ul {margin-left: -4px; margin-right: -4px;}
+#outer-section-6 .columns li {width: 33.333333333333336%; float: left;}
+#outer-section-6 .columns li div {margin-bottom: 9px;padding: 0 4px;}
+#outer-section-6 .columns li div img {width: 100%; height: auto;}
+@media screen and (max-width : 1920px) {}
+@media screen and (max-width : 1280px) {}
+@media screen and (max-width : 1024px) {}
+@media screen and (max-width : 640px) {}
+@media screen and (max-width : 320px) {}
+#outer-section-7 {background-color: #650719;}
+#outer-section-7 .outer-banner {background: url(../images/qd_s7_bg.png) no-repeat scroll center bottom / cover;}
+#outer-section-8 {background-color: #650719;}
+#outer-section-8 .columns {padding: 20pxpx 0pxpx;}
+#outer-section-8 .columns li {width: 100%; float: left;}
+#outer-section-8 .columns li img {width: 100%; height: auto;}
+@media screen and (max-width : 1920px) {}
+@media screen and (max-width : 1280px) {}
+@media screen and (max-width : 1024px) {}
+@media screen and (max-width : 640px) {}
+@media screen and (max-width : 320px) {}
 #outer-section-9 {background-color: #650719;}
-#outer-section-10 {background-color: #650719;}
-#inner-columns-10 {height:1038px;padding:20px 0px;}
-#inner-columns-10 ul {width:100%;margin-top:9px;float:left;}
-#inner-columns-10 ul:first-child {margin-top:0;}
-#inner-columns-10 li {width:321px;height:340px;margin-left:9px;float:left;}
-#inner-columns-10 li:first-child {margin-left:0;}
-#outer-section-11 {height: 220px; background: url(../images/qd_s11.png) no-repeat scroll center bottom / cover;}
+#outer-section-9 .columns {padding: 0pxpx 0pxpx 40pxpx 0pxpx;}
+#outer-section-9 .columns ul {margin-left: -4px; margin-right: -4px;}
+#outer-section-9 .columns li {width: 33.333333333333336%; float: left;}
+#outer-section-9 .columns li div {margin-bottom: 9px;padding: 0 4px;}
+#outer-section-9 .columns li div img {width: 100%; height: auto;}
+@media screen and (max-width : 1920px) {}
+@media screen and (max-width : 1280px) {}
+@media screen and (max-width : 1024px) {}
+@media screen and (max-width : 640px) {}
+@media screen and (max-width : 320px) {}
+#outer-section-10 .outer-banner {background: url(../images/qd_s10_bg.png) no-repeat scroll center bottom / cover;}
+#outer-section-11 {background-color: #A3061E;}
 #outer-section-12 {background-color: #A3061E;}
-#outer-section-13 {background-color: #A3061E;}
-#inner-columns-13 {height:360px;padding:20px 0px;}
-#inner-columns-13 ul {width:100%;float:left;}
-#inner-columns-13 li {width:321px;height:360px;margin-left:9px;float:left;}
-#inner-columns-13 li:first-child {margin-left:0;}
-#outer-section-14 {height: 202px; background: url(../images/qd_s14.png) no-repeat scroll center bottom / cover;}
-#outer-section-15 {background-color: #650719;}
-#inner-columns-15 {height:651px;padding:0px;}
-#inner-columns-15 ul {width:100%;margin-top:9px;float:left;}
-#inner-columns-15 ul:first-child {margin-top:0;}
-#inner-columns-15 li {width:321px;height:123px;margin-left:9px;float:left;}
-#inner-columns-15 li:first-child {margin-left:0;}
-#outer-section-16 {background-color: #650719;}
+#outer-section-12 .columns {padding: 20pxpx 0pxpx 42pxpx 0pxpx;}
+#outer-section-12 .columns ul {margin-left: -4px; margin-right: -4px;}
+#outer-section-12 .columns li {width: 33.333333333333336%; float: left;}
+#outer-section-12 .columns li div {padding: 0 4px;}
+#outer-section-12 .columns li div img {width: 100%; height: auto;}
+@media screen and (max-width : 1920px) {}
+@media screen and (max-width : 1280px) {}
+@media screen and (max-width : 1024px) {}
+@media screen and (max-width : 640px) {}
+@media screen and (max-width : 320px) {}
+#outer-section-13 {background-color: #650719;}
+#outer-section-14 {background-color: #650719;}
+#outer-section-14 .columns {padding: 47pxpx 0pxpx;}
+#outer-section-14 .columns ul {margin-left: -4px; margin-right: -4px;}
+#outer-section-14 .columns li {width: 33.333333333333336%; float: left;}
+#outer-section-14 .columns li div {margin-bottom: 9px;padding: 0 4px;}
+#outer-section-14 .columns li div img {width: 100%; height: auto;}
+@media screen and (max-width : 1920px) {}
+@media screen and (max-width : 1280px) {}
+@media screen and (max-width : 1024px) {}
+@media screen and (max-width : 640px) {}
+@media screen and (max-width : 320px) {}
+#outer-section-15 {background-color: #FFFFFF;}

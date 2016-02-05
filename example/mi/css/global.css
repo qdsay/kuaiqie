@@ -17,50 +17,72 @@ a:active {color: #666666;}
 
 .outer-section {width:100%; margin-bottom: 15px; float: left; clear: both;}
 .outer-wrapper {width:100%; max-width: 1240px; margin: 0 auto;}
+.columns {max-width: 1240px; margin: 0 auto;}
 .banner {width:100%; max-width: 1240px; height: auto;}
-#outer-section-1 {height: 37px; background: url(../images/qd_s1.png) no-repeat scroll center bottom / cover}
-#outer-section-4 {margin-bottom: 0;}
-#inner-columns-5 {height:308px;padding:1px;background-color:#DFDFDF;}
-#inner-columns-5 ul {width:100%;float:left;}
-#inner-columns-5 li {width:308px;height:308px;margin-left:2px;float:left;}
-#inner-columns-5 li:first-child {margin-left:0;}
-#outer-section-6 {margin-bottom: 0;}
-#inner-columns-7 {height:929px;padding:1px;background-color:#DFDFDF;}
-#inner-columns-7 ul {width:100%;margin-top:2px;float:left;}
-#inner-columns-7 ul:first-child {margin-top:0;}
-#inner-columns-7 li {width:308px;height:308px;margin-left:2px;float:left;}
-#inner-columns-7 li:first-child {margin-left:0;}
-#outer-section-8 {margin-bottom: 0;}
-#inner-columns-9 {height:619px;padding:1px;background-color:#DFDFDF;}
-#inner-columns-9 ul {width:100%;margin-top:2px;float:left;}
-#inner-columns-9 ul:first-child {margin-top:0;}
-#inner-columns-9 li {width:308px;height:308px;margin-left:2px;float:left;}
-#inner-columns-9 li:first-child {margin-left:0;}
-#outer-section-10 {margin-bottom: 0;}
-#inner-columns-11 {height:409px;padding:1px;background-color:#DFDFDF;}
-#inner-columns-11 ul {width:100%;float:left;}
-#inner-columns-11 li {width:308px;height:409px;margin-left:2px;float:left;}
-#inner-columns-11 li:first-child {margin-left:0;}
-#outer-section-12 {margin-bottom: 0;}
-#inner-columns-13 {height:309px;padding:1px;background-color:#DFDFDF;}
-#inner-columns-13 ul {width:100%;float:left;}
-#inner-columns-13 li {width:308px;height:309px;margin-left:2px;float:left;}
-#inner-columns-13 li:first-child {margin-left:0;}
-#outer-section-14 {margin-bottom: 0;}
-#inner-columns-15 {height:409px;padding:1px;background-color:#DFDFDF;}
-#inner-columns-15 ul {width:100%;float:left;}
-#inner-columns-15 li {width:308px;height:409px;margin-left:2px;float:left;}
-#inner-columns-15 li:first-child {margin-left:0;}
-#outer-section-16 {margin-bottom: 0;}
-#inner-columns-17 {height:335px;padding:1px;background-color:#DFDFDF;}
-#inner-columns-17 ul {width:100%;float:left;}
-#inner-columns-17 li {width:308px;height:335px;margin-left:2px;float:left;}
-#inner-columns-17 li:first-child {margin-left:0;}
-#outer-section-18 {margin-bottom: 0;}
-#outer-section-19 {margin-bottom: 0; background-color: #FAFAFA;}
-#inner-columns-19 {height:77px;padding:40px;}
-#inner-columns-19 ul {width:100%;float:left;}
-#inner-columns-19 li {width:168px;height:77px;margin-left:80px;float:left;}
-#inner-columns-19 li:first-child {margin-left:0;}
-#outer-section-20 {margin-bottom: 0; background-color: #FAFAFA;}
-#outer-section-21 {background-color: #FAFAFA;}
+.outer-banner {width:100%; max-width: 1263px; margin: 0 auto; height: auto;}
+.split {margin-bottom: 0;}
+
+#outer-section-1 {background-color: #FAFAFA;}
+#outer-section-1 .outer-banner {background: url(../images/qd_s1_bg.png) no-repeat scroll center bottom / cover;}
+#outer-section-5 .columns li {width: 25%; float: left;}
+#outer-section-5 .columns li img {width: 100%; height: auto;}
+@media screen and (max-width : 1920px) {}
+@media screen and (max-width : 1280px) {}
+@media screen and (max-width : 1024px) {}
+@media screen and (max-width : 640px) {}
+@media screen and (max-width : 320px) {}
+#outer-section-7 .columns li {width: 25%; float: left;}
+#outer-section-7 .columns li img {width: 100%; height: auto;}
+@media screen and (max-width : 1920px) {}
+@media screen and (max-width : 1280px) {}
+@media screen and (max-width : 1024px) {}
+@media screen and (max-width : 640px) {}
+@media screen and (max-width : 320px) {}
+#outer-section-9 .columns li {width: 25%; float: left;}
+#outer-section-9 .columns li img {width: 100%; height: auto;}
+@media screen and (max-width : 1920px) {}
+@media screen and (max-width : 1280px) {}
+@media screen and (max-width : 1024px) {}
+@media screen and (max-width : 640px) {}
+@media screen and (max-width : 320px) {}
+#outer-section-11 .columns li {width: 25%; float: left;}
+#outer-section-11 .columns li img {width: 100%; height: auto;}
+@media screen and (max-width : 1920px) {}
+@media screen and (max-width : 1280px) {}
+@media screen and (max-width : 1024px) {}
+@media screen and (max-width : 640px) {}
+@media screen and (max-width : 320px) {}
+#outer-section-13 .columns li {width: 25%; float: left;}
+#outer-section-13 .columns li img {width: 100%; height: auto;}
+@media screen and (max-width : 1920px) {}
+@media screen and (max-width : 1280px) {}
+@media screen and (max-width : 1024px) {}
+@media screen and (max-width : 640px) {}
+@media screen and (max-width : 320px) {}
+#outer-section-15 .columns li {width: 25%; float: left;}
+#outer-section-15 .columns li img {width: 100%; height: auto;}
+@media screen and (max-width : 1920px) {}
+@media screen and (max-width : 1280px) {}
+@media screen and (max-width : 1024px) {}
+@media screen and (max-width : 640px) {}
+@media screen and (max-width : 320px) {}
+#outer-section-17 .columns {padding: 0pxpx 0pxpx 51pxpx 0pxpx;}
+#outer-section-17 .columns li {width: 25%; float: left;}
+#outer-section-17 .columns li img {width: 100%; height: auto;}
+@media screen and (max-width : 1920px) {}
+@media screen and (max-width : 1280px) {}
+@media screen and (max-width : 1024px) {}
+@media screen and (max-width : 640px) {}
+@media screen and (max-width : 320px) {}
+#outer-section-18 {background-color: #FAFAFA;}
+#outer-section-18 .columns ul {margin-left: -40px; margin-right: -40px;}
+#outer-section-18 .columns li {width: 20%; float: left;}
+#outer-section-18 .columns li div {padding: 0 40px;}
+#outer-section-18 .columns li div img {width: 100%; height: auto;}
+@media screen and (max-width : 1920px) {}
+@media screen and (max-width : 1280px) {}
+@media screen and (max-width : 1024px) {}
+@media screen and (max-width : 640px) {}
+@media screen and (max-width : 320px) {}
+#outer-section-19 {background-color: #FAFAFA;}
+#outer-section-20 {background-color: #FAFAFA;}
