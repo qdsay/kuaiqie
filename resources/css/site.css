@@ -54,8 +54,8 @@ select option{padding-left:3px}
 .toolbar span{width:132px;display:block;float:left}
 .toolbar .more{width:320px;padding-top:8px;}
 .toolbar .set-btn{border:1px solid #06f;background-color:#06f;background:linear-gradient(to bottom,#09f 0,#06f 100%)}
-.ruler-btn,.picker-btn{padding:0 3px 0 23px;background:url(../images/qd.png) 0 0 no-repeat;cursor:pointer}
-.picker-btn{background-position:0 -30px}
+.ruler-btn,.picker-btn{height: 26px; line-height: 26px; display: inline-block; padding-left: 23px; background:url(../images/qd.png) 0 3px no-repeat;vertical-align:middle;cursor:pointer}
+.picker-btn{background-position:0 -27px}
 #sharelist{padding:0 5px}
 #sharelist a{width:32px!important;height:32px!important;line-height:32px!important;padding-left:0!important}
 #main{margin-top:45px;position:relative;overflow:hidden}
@@ -104,7 +104,7 @@ select option{padding-left:3px}
 .aboutus{text-indent:32px}
 #focus{width:320px;padding:10px;float:left;clear:both}
 #focus h6 {padding-bottom:10px;border-top:1px solid #27ebf7;font-size:14px;}
-#dropbox{margin:50px auto 0;width:366px;height:300px;position:relative;border:5px dashed #999;border-radius:5px;background:url(../images/uploads.png) 50% 25% no-repeat;text-align:center}
+#dropbox{margin:50px auto 0;width:366px;height:300px;position:relative;border:5px dashed #999;border-radius:5px;background:url(../images/uploads.png) 50% 25% no-repeat;background-size:128px 128px;text-align:center}
 #dropbox h3{font-size:24px;padding-top:200px}
 #dropbox p{font-size:16px;padding:25px 0}
 #dropbox p.know{font-size:14px}
