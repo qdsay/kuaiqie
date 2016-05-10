@@ -9,7 +9,7 @@ input.edge,input.space{width:36px;height:18px;border:0;border-left:1px solid #CC
 select.mini{width:73px;height:25px;border:1px solid #09f;border-radius:3px}
 select option{padding-left:3px}
 .input-tag{width:80px;height:22px;line-height:22px;padding-left:4px;display:inline-block;border:1px solid #09f;border-radius:3px;background-color:#efefef}
-.px{padding-right:20px;background:url(../images/px.png) top right no-repeat #fff}
+.px{padding-right:20px;background:url(../images/px.png) 100px 4px no-repeat #fff;background-size:18px 18px;}
 #headbar{padding:0 10px;position:relative}
 #logo{margin-top:5px;float:left}
 #navbar{margin-left:5px;padding-top:5px;float:left}
