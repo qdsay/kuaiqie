@@ -1,4 +1,4 @@
-header{width:100%;min-width:1000px;height:45px;background-color:#262635;position:fixed;top:0;left:0;z-index:9999}
+header{width:100%;min-width:1000px;height:45px;background-color:#22282e;position:fixed;top:0;left:0;z-index:9999}
 section{min-height:20px}
 input{height:20px;border:1px solid #09f;border-radius:3px;padding:2px;vertical-align:middle}
 input.long{width:300px}
@@ -14,21 +14,21 @@ select option{padding-left:3px}
 #logo{margin-top:5px;float:left}
 #navbar{margin-left:5px;padding-top:5px;float:left}
 #navbar li,.toolbar li{width:75px;height:40px;line-height:40px;margin-right:5px;float:left}
-#navbar li.on{background-color:#02a2aa;position:relative}
-.doing{width:35px;height:40px;line-height:40px;padding-left:40px;display:block;background:url(../images/icon.png) 0 0 no-repeat;font-weight:bold;color:#fff}
+#navbar li.on{background-color:#0099cc;position:relative}
+.doing{width:35px;height:40px;line-height:40px;padding-left:40px;display:block;background:url(../images/icon.png) 0 0 no-repeat;color:#fff}
 .doing:link,.doing:visited,.doing:active{color:#fff}
-.doing:hover{background-color:#02a2aa}
+.doing:hover{background-color:#09c}
 .takeIt,.closeIt,.removeIt,.closeCrop{width:17px;height:17px;display:block;position:absolute;background:url(../images/close.png) 0 0 no-repeat;cursor:pointer}
 .takeIt,.closeIt,.closeCrop{top:5px;right:5px}
 .removeIt{top:0;right:0}
 .closeCrop{z-index:1001}
-.cropHandler{width:500px;height:30px;line-height:30px;position:absolute;background-color:#666;color:#fff;z-index:1001;display:none}
-.cropHandler span{width:105px;height:20px;line-height:20px;padding:5px 0 5px 5px;display:inline-block}
-.cropHandler em{width:48px;height:20px;background:url(../images/px.png) top right no-repeat #fff;color:#333;display:inline-block;float:right}
+.cropHandler{width:560px;height:30px;line-height:30px;position:absolute;background-color:#666;color:#fff;z-index:1001;display:none}
+.cropHandler span{width:120px;height:20px;line-height:20px;padding:5px 0 5px 5px;display:inline-block}
+.cropHandler em{width:60px;height:20px;background:url(../images/px.png) 40px 2px no-repeat #fff;background-size:18px 18px;color:#333;display:inline-block;float:right}
 .cropHandler a,.cropHandler a:hover{height:30px;padding:0 10px;display:inline-block;background-color:#06f;color:#fff;float:right}
 #setup.disabled{background-position:-80px 0;color:#ccc}
 #append{background-position:0 -40px}
-#append.disabled{background-position:-80px -40px;color:#ccc}
+#append.disabled{background-position:-80px -40px;color:#eee}
 #clear{background-position:0 -80px}
 #clear.disabled{background-position:-80px -80px;color:#ccc}
 #code{background-position:0 -160px}
@@ -37,7 +37,7 @@ select option{padding-left:3px}
 #favorite{background-position:0 -280px}
 #share{background-position:0 -320px}
 #help{background-position:0 -360px}
-#uploads-btn{width:80px;height:27px}
+#uploads-btn{width:80px;height:25px;border:1px solid #06f;background-color:#06f;background:linear-gradient(to bottom,#09f 0,#06f 100%);color:#fff}
 #uploads-file{width:300px;position:absolute;top:12px;left:61px;filter:alpha(opacity=0);-moz-opacity:0;opacity:0}
 #desc{height:30px;line-height:30px;margin-top:6px;padding-left:35px;background:url(../images/html5.png) 0 0 no-repeat;color:#fff;font-size:16px;float:right}
 .toolbar .set-btn,#extra .set-btn{height:26px;padding:0 10px;border-radius:3px;color:#fff;cursor:pointer}
@@ -48,17 +48,17 @@ select option{padding-left:3px}
 .toolbar h5{padding:0 5px}
 .toolbar p{height:36px;line-height:36px;font-size:14px;color:#333}
 .toolbar p label{width:56px;padding-left:5px;display:inline-block;float:left}
-.toolbar p textarea{width:300px;height:80px;padding:2px;border:1px solid #09f;border-radius:3px}
-.toolbar p.uneven{padding-left:61px}
-.toolbar p.heighter{height:100px!important;}
+.toolbar p textarea{width:300px;height:80px;margin-top:8px;padding:2px;border:1px solid #09f;border-radius:3px}
+.toolbar p.uneven{padding-left:61px;margin-bottom:5px}
+.toolbar p.heighter{height:100px!important}
 .toolbar span{width:132px;display:block;float:left}
-.toolbar .more{width:320px;padding-top:8px;}
-.toolbar .set-btn{border:1px solid #06f;background-color:#06f;background:linear-gradient(to bottom,#09f 0,#06f 100%)}
+.toolbar .more{width:320px;height:100px}
+.toolbar .set-btn{border:1px solid #06f;background-color:#06f;background:linear-gradient(to bottom,#09f 0,#06f 100%),vertical-align:middle;}
 .ruler-btn,.picker-btn{height: 26px; line-height: 26px; display: inline-block; padding-left: 23px; background:url(../images/qd.png) 0 3px no-repeat;vertical-align:middle;cursor:pointer}
 .picker-btn{background-position:0 -27px}
 #sharelist{padding:0 5px}
 #sharelist a{width:32px!important;height:32px!important;line-height:32px!important;padding-left:0!important}
-#main{margin-top:45px;position:relative;overflow:hidden}
+#main{margin-top:45px;position:relative;}
 #myCanvas,#myPannel,#myPicker,#tempCanvas,#outCanvas,#outImage{position:absolute;top:0;left:0}
 #myCanvas{margin:0 auto;display:none}
 #myPannel{z-index:9}
